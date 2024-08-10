@@ -1,0 +1,792 @@
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+// BG-home
+
+.bg-home{
+    position: relative;
+}
+
+.bg-home::before{
+    content:'';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #0d0f11), url("../assets/BackGround.JPG");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.4;
+}
+
+// Hero
+
+.hero{
+    color: $white-normal;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 46px;
+    }
+
+    p{
+        text-align: center;
+        margin: 14px 0;
+    }
+}
+
+.button-contact{
+    padding: 14px 28px;
+    color: $white-normal;
+    background-color: $red-normal;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+.button-contact:hover{
+    animation: ScaleButton 0.8s alternate infinite;
+}
+
+@keyframes ScaleButton {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.03);
+    }
+}
+
+@media screen and (max-whidth: 768px){
+    .hero{
+        min-height: 60vh;
+
+        h1{
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero h1{
+        font-size: 24px;
+    }
+}
+
+// About
+
+.about{
+    background-color: $primary-normal;
+    overflow: hidden;
+    color: $white-normal; 
+    
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+    color: $white-normal;
+     
+    img{
+        max-width: 570px;
+    }
+}
+
+.about-content div{
+    flex: 1;
+}
+
+.about-description{
+    h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+    p{
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about-content{
+        flex-direction: column;
+    }
+}
+
+.ff{
+    padding: 140px 14px 14px 14px;
+
+}
+
+// Services
+
+.services{
+    background-color: #363737;
+    color: $white-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.services-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+}
+
+.services-content p{
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+}
+
+.produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+}
+
+//Cursos
+
+//CSS
+
+.CSS{
+    flex: 1;
+    display: block;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 16px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+
+    img{
+        width: 90%;
+        max-width: 300px;
+        padding: 48px 48px 48px 48px;
+        transition: transform 0.5s;
+    }
+}
+
+.CSS img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.CSS-info{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    background-color: $white-normal;
+    z-index: 3;
+}
+
+.CSS-info button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 18px;
+    border: 0px;
+}
+
+//HTML
+
+.HTML{
+    flex: 1;
+    display: block;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 16px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+
+    img{
+        width: 90%;
+        max-width: 300px;
+        padding: 48px 48px 48px 48px;
+        transition: transform 0.5s;
+    }
+}
+
+.HTML img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.HTML-info{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    background-color: $white-normal;
+    z-index: 3;
+}
+
+.HTML-info button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 18px;
+    border: 0;
+}
+
+//Marketing
+
+.Marketing{
+    flex: 1;
+    display: inline-block;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 16px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+
+    img{
+        width: 90%;
+        max-width: 300px;
+        padding: 35px 48px 36px 48px;
+        transition: transform 0.5s;
+    }
+}
+
+.Marketing img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.Marketing-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 17px 49px;
+    background-color: $white-normal;
+    z-index: 3;
+}
+
+.Marketing-info button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 18px;
+    border: 0;
+    margin-left: 160px;
+}
+//----
+
+@media screen and (max-width: 768px) {
+    .produtos{
+        flex-direction: column;
+    }
+
+    .produtos img{
+        max-width: 300px;
+    }
+
+    .Marketing-info button{
+        margin-right: 35px;
+    }
+
+}
+
+//Excel
+
+.Excel{
+    flex: 1;
+    display: inline-block;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 16px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+
+    img{
+        width: 90%;
+        max-width: 300px;
+        padding: 55px 155px 48px 48px;
+        transition: transform 0.5s;
+    }
+}
+
+.Excel img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.Excel-info{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    background-color: $white-normal;
+    z-index: 3;
+}
+
+.Excel-info button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 18px;
+    border: 0;
+}
+
+//Nutrição
+
+.Nutrição{
+    flex: 1;
+    display: inline-block;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 16px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+
+
+    img{
+        width: 90%;
+        max-width: 300px;
+        padding: 48px 48px 48px 48px;
+        transition: transform 0.5s;
+    }
+}
+
+.Nutrição img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.Nutrição-info{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    background-color: $white-normal;
+    z-index: 3;
+}
+
+.Nutrição button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 18px;
+    border: 0;
+}
+//----
+
+@media screen and (max-width: 768px) {
+    .produtos{
+        flex-direction: column;
+    }
+
+    .produtos img{
+        max-width: 300px;
+    }
+
+}
+
+//MindSet
+
+.Mind{
+    flex: 1;
+    display: inline-block;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 16px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+
+    img{
+        width: 90%;
+        max-width: 250px;
+        padding: 56px 20px 55px 70px;
+        transition: transform 0.5s;
+    }
+}
+
+.Mind img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.Mind-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 17px 42px 17px 55px;
+    background-color: $white-normal;
+    z-index: 3;
+    margin-left: 75px;
+}
+
+.Mind-info button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px 4px 8px;
+    border-radius: 18px;
+    border: 0;
+    
+}
+//----
+
+@media screen and (max-width: 768px) {
+    .produtos{
+        flex-direction: column;
+    }
+
+    .produtos img{
+        max-width: 300px;
+    }
+
+    .Mind{
+        
+        img{
+            padding: 48px 80px 48px 80px
+        }
+    }
+
+}
+
+//Ansiedade
+
+.Ansiedade{
+    flex: 1;
+    display: inline-block;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 16px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+
+    img{
+        width: 90%;
+        max-width: 255px;
+        padding: 100px 48px 70px 70px;
+        transition: transform 0.5s;
+    }
+}
+
+.Ansiedade img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.Ansiedade-info{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    background-color: $white-normal;
+    z-index: 3;
+}
+
+.Ansiedade-info button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 18px;
+    border: 0;
+}
+
+
+//Concurso
+
+.Concurso{
+    flex: 1;
+    display: inline-block;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 16px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+
+    img{
+        width: 90%;
+        max-width: 274px;
+        padding: 100px 80px 54px 55px;
+        transition: transform 0.5s;
+    }
+}
+
+.Concurso img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.Concurso-info{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    background-color: $white-normal;
+    z-index: 3;
+}
+
+.Concurso-info button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 18px;
+    border: 0;
+}
+
+
+//Poder
+
+.Poder{
+    flex: 1;
+    display: inline-block;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 16px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+
+    img{
+        width: 55%;
+        max-width: 280px;
+        padding: 133px 30px 99px 90px;
+        transition: transform 0.5s;
+    }
+}
+
+.Poder img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.Poder-info{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    background-color: $white-normal;
+    z-index: 3;
+}
+
+.Poder-info button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 18px;
+    border: 0;
+}
+
+//PM
+
+.PM{
+    flex:1;
+    display: inline-block;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 16px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+
+    img{
+        width: 55%;
+        max-width: 290px;
+        padding: 146px 30px 98px 140px;
+        transition: transform 0.5s;
+    }
+}
+
+.PM img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.PM-info{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    background-color: $white-normal;
+    z-index: 3;
+}
+
+.PM-info button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 18px;
+    border: 0;
+}
+
+//Resultado
+
+.Resultados{
+    flex: 1;
+    display: inline-block;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 16px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+
+    img{
+        width: 55%;
+        max-width: 305px;
+        padding: 100px 30px 98px 154px;
+        transition: transform 0.5s;
+    }
+}
+
+.Resultados img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.Resultados-info{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    background-color: $white-normal;
+    z-index: 3;
+}
+
+.Resultados-info button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 18px;
+    border: 0;
+}
+
+.VerMaisbtn{
+    border: 1px solid $white-normal;
+    padding: 5px 19px;
+    border-radius: 100px;
+    color: $white-normal;
+    background-color: transparent;
+    transition: background-color 0.8s;
+}
+
+.VerMaisbtn:hover{
+    border: 1px solid $red-light;
+    background-color: $red-light;
+}
+
+.mais{
+    display: none;
+}
+
+//Footer
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: $white-normal;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 14px;
+    color: $white-normal;
+}
+
+.footer-icons a:hover{
+    i{
+        animation: translateY 0.8s infinite alternate;
+        color: $red-light;
+    }
+}
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to{
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+// Whats
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 4;
+
+    img{
+        max-width: 64px;
+        transition: transform 0.4s;
+    }
+
+    img:hover{
+        transform: scale(1.2);
+    }
+}
+
+.btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 4px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: $black-normal;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity 0.4;
+}
+
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+    .btn-whatsapp{
+        img{
+            max-width: 64px;
+        }
+    }
+}
